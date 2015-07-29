@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dailybela="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/change_display"
+        android:icon="@drawable/toggle_on_50"
+        android:text="@string/action_search"
+        dailybela:showAsAction="always"
+        android:title="@string/change_display"
+        />
+
+    <!--<item android:id="@+id/action_search"
+        android:icon="@drawable/search_50"
+        android:title="@string/action_search"
+        android:text="@string/action_search"
+        dailybela:showAsAction="always" />-->
+    <!-- Settings, should always be in the overflow -->
+
+<!--    <item android:id="@+id/action_settings"
+        android:icon="@drawable/ic_action_settings"
+        android:title="@string/action_settings"
+        dailybela:showAsAction="always" />-->
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On"
+        android:id="@+id/toggleButton"
+        dailybela:showAsAction="always"
+        android:checked="true"/>
+    <item
+        android:id="@+id/photo"
+        android:icon="@drawable/ic_action_accept"
+        android:title="Switch To DailyPapers"
+        dailybela:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/video"
+        android:icon="@drawable/ic_action_search"
+        android:title="Daily Witness"
+        dailybela:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/mobile"
+        android:icon="@drawable/ic_action_search"
+        android:title="Setting"
+        dailybela:showAsAction="never"
+        />
+
+        <item
+        android:id="@+id/search"
+        android:title="Terms"
+        android:icon="@drawable/ic_action_search"
+            dailybela:showAsAction="never"
+        />
+    <item
+        android:id="@+id/ssserch"
+        android:title="About DailyBel"
+        android:icon="@drawable/ic_action_search"
+        dailybela:showAsAction="never"
+        android:actionLayout="@layout/search_layout"
+        />
+
+</menu>
